@@ -1,15 +1,14 @@
 # salary
 # Model deployement using FLaskAPI (a micro web frame work)
 # case study: HR of certain company who is hiring required to know the salalry of the newly joined employee. A model is created based on the experience of the employee shpuld predict the salary
-# varibles:
-name, age, experience, salary.
+# varibles:name, age, experience, salary.
 salary would be my dependent variable and experience would be my independent variable with the linear regression i solved the problem and with good accuracy 
 model is build and should be dumped in the pickle file and saved and loaded in model.pkl(model is saved in this particular  file)
-#Flask API:
+# Flask API:
 this is the web frame work where our model is deployed
 initially create a file (app.py)importing the packages creating an api with defining a function and also index.html file is loaded (this is the web browser page designing file) 
 when our model is read from the pkl file html file will display the page format where you give our input.
-# files required to build an api model
+# files required to build an api:
 model.pkl
 model.py
 app.py
