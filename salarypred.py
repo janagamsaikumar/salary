@@ -7,7 +7,7 @@ model = pickle.load(open('model.pkl', 'rb')) # read the pickle file where we dev
 @app.route('/') # creating a api
 def home():
     return render_template('index.html') # this renders the template of html
-@app.route('/predict',methods=['POST']) # this is my post request which is predict and i defined a fucntion predict
+@app.route('/predict',methods=['GET','POST']) # this is my post request which is predict and i defined a fucntion predict
 def predict():
     int_features = [int(x) for x in request.form.values()] # my list of values are store in x which in integers stored in object created
 
